@@ -15,9 +15,9 @@ function setup() {
 	rectMode(CENTER); 
 	engine = Engine.create(); 
 	world = engine.world; 
-	dustbinObj=new dustbin(1200,650); 
+	dustbinObj=new dustbin(1100,650); 
 	paperObject=new paper(200,450,40); 
-	groundObject=new ground(width/2,670,width,20); 
+	groundObject=new ground(width/2,710,width,20); 
 	var render = Render.create({ element: document.body, engine: engine, options: { width: 1200, height: 700, wireframes: false } });
 	 Engine.run(engine);
   
@@ -26,7 +26,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background(0);
+  background(255);
 
   dustbinObj.display()
   paperObject.display()
